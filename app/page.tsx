@@ -2,25 +2,14 @@
 import { useState } from 'react';
 import styles from './page.module.css';
 import Link from "next/link";
+import Header from "../components/Header";
+
 export default function Home() {
   /*const [showProfile, setShowProfile] = useState(false);*/
 
   return (
     <main>
-      <div className={styles.title_header}>
-   
-        <h1 className={styles.title}>
-          <Link href="/" >
-            自分ページ
-          </Link>
-        </h1>
-        <h1 className={styles.nav}>
-          <Link href="/Unity" >
-            Unity
-          </Link>
-        </h1>
-        
-      </div>
+      <Header />
       <h1 className={styles.pagetitle}>自己紹介</h1>
 
           <h2 className={styles.subtitle}>プロフィール</h2>

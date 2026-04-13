@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from "./page.module.css";
 import Link from "next/link";
+import Header from "../../components/Header";
 
 export default function Home() {
     const [showShooting, setShooting] = useState(false);
@@ -10,16 +11,7 @@ export default function Home() {
     <main>
       <div className={styles.title_header}>
    
-        <h1 className={styles.title}>
-          <Link href="/" >
-            自分ページ
-          </Link>
-        </h1>
-        <h1 className={styles.nav}>
-          <Link href="/Unity" >
-            Unity
-          </Link>
-        </h1>
+         <Header />
       
       </div>
        <h1 className={styles.pagetitle}>
