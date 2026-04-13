@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/MyPage/my-profile/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <main>\n      <h1>自己紹介</h1>\n\n      <h2>プロフィール</h2>\n      <p>高校1年生 / プログラミング勉強中</p>\n\n      <h2>スキル</h2>\n      <ul>\n        <li>C#（Unity）</li>\n        <li>JavaScript（勉強中）</li>\n      </ul>\n\n      <h2>趣味</h2>\n      <p>ゲーム制作・開発</p>\n    </main>\n  );\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BAEJ,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BAEH,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;;kCACC,8OAAC;kCAAG;;;;;;kCACJ,8OAAC;kCAAG;;;;;;;;;;;;0BAGN,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
-}
