@@ -17,10 +17,9 @@ export default function Home() {
 
           <h2 className={styles.subtitle}>スキル</h2>
           <ul className={styles.container}>
-            <li>  C#（Unity）</li>
-            <li>  JavaScript（最近始めた）</li>
-            <li>  Python（勉強中）</li>
-            <li>  Python（勉強中）</li>
+            <li> ・ C#（Unity）</li>
+            <li> ・Next.jsでJavaScriptやcss、html（最近始めた）</li>
+            <li> ・Python（pygameで適当に使うGUIツール作成）</li>
           </ul>
   
 

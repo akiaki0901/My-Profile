@@ -13,10 +13,24 @@ export default function Header() {
               </h1>
               <h1 className={styles.nav}>
                 <Link href="/Unity" >
-                  Unityについて
+                  Unity
                 </Link>
               </h1>
-            
+                <h1 className={styles.nav}>
+                <Link href="/Python" >
+                  Python
+                </Link>
+              </h1>
+              <h1 className={styles.nav}>
+                <Link href="/NextJS" >
+                  Next.js
+                </Link>
+              </h1>
+              <h1 className={styles.nav}>
+                <Link href="/Art" >
+                  絵
+                </Link>
+              </h1>
         </div>
     </header>
   );
