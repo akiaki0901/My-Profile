@@ -25,7 +25,7 @@ export default function Home() {
           </Image_Text>
       </ButtonOpenText>
       
-      <ButtonOpenText title = "お絵描きアプリ零号機作">
+      <ButtonOpenText title = "お絵描きアプリ零号機作製">
         <p>
             カーソルが左上から動き黒か白を選ぶと次に行き、端につくと下に改行、そして左からまた描く。
             書き出しは背景がgbなのでスクショで可能(したことはない)。
