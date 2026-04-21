@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 
-export default function Section({ title, children, defaultOpen=false }) {
+export default function ButtonOpenText({ title, children, defaultOpen=false }) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
