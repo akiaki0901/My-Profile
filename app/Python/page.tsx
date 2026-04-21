@@ -1,11 +1,9 @@
 "use client";
 import styles from "./page.module.css";
-import Header from "../../components/Header";
-import ButtonOpenText from "../../components/ButtonOpenText";
-import Footer from "../../components/Footer";
-import Image_Text from "../../components/Image_Text";
-import PageLayout from "../../components/PageLayout";
-import Image from "next/image";
+import ButtonOpenText from "@/components/ButtonOpenText";
+import Image_Text from "@/components/Image_Text";
+import PageLayout from "@/components/PageLayout";
+
 
 export default function Home() {
 
