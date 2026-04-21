@@ -18,9 +18,9 @@ export default function Section({ title, children, defaultOpen=false }) {
 
       {open && (
         <div className={styles.section}>
-          <p className={styles.container}>
+          
             {children}
-          </p>
+          
           <button onClick={() => setOpen(false)} className={styles.showButton}>
             ▲詳細を閉じる
           </button>
