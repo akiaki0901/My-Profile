@@ -1,8 +1,8 @@
 "use client";
 import styles from "./page.module.css";
-import Header from "../../components/Header";
-import ButtonOpenText from "../../components/ButtonOpenText";
-import Footer from "../../components/Footer"
+import Header from "@/components/Header";
+import ButtonOpenText from "@/components/ButtonOpenText";
+import Footer from "@/components/Footer"
 import Image from "next/image";
 export default function Home() {
   return (

@@ -2,14 +2,14 @@
 import { useState } from 'react';
 import styles from './page.module.css';
 import Link from "next/link";
-import Header from "../components/Header";
+/*import Header from "../components/Header";*/
 
 export default function Home() {
   /*const [showProfile, setShowProfile] = useState(false);*/
 
   return (
     <main>
-      <Header />
+      {/*<Header />*/}
       <h1 className={styles.pagetitle}>自己紹介</h1>
 
           <h2 className={styles.subtitle}>プロフィール</h2>
