@@ -1,11 +1,8 @@
 "use client";
 import styles from "./page.module.css";
-import Header from "../../components/Header";
 import ButtonOpenText from "../../components/ButtonOpenText";
-import Footer from "../../components/Footer";
 import Image_Text from "../../components/Image_Text";
 import PageLayout from "../../components/PageLayout";
-import Image from "next/image";
 
 export default function Home() {
 
@@ -27,7 +24,7 @@ export default function Home() {
           </Image_Text>
       </ButtonOpenText>
       
-      <ButtonOpenText title = "お絵描きアプリ零号機作">
+      <ButtonOpenText title = "お絵描きアプリ零号機作成">
         <p>
             カーソルが左上から動き黒か白を選ぶと次に行き、端につくと下に改行、そして左からまた描く。
             書き出しは背景がgbなのでスクショで可能(したことはない)。
