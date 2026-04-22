@@ -18,7 +18,7 @@ export default function ButtonOpenText({ title, children, defaultOpen=false }) {
       </div>
 
       {open && (
-        <div className={styles.section}>
+        <div className={styles.inner}>
           
             {children}
           
