@@ -1,15 +1,16 @@
-"use client";
-import { useState } from 'react';
 import styles from './page.module.css';
-import Link from "next/link";
-import Header from "../components/Header";
+import PageLayout from "@/components/PageLayout";
+
+export const metadata = {
+  title: "自己紹介 | akiのサイト",
+  description: "akiのプロフィール・スキル・趣味を紹介",
+};
 
 export default function Home() {
   /*const [showProfile, setShowProfile] = useState(false);*/
 
   return (
-    <main>
-      <Header />
+    <PageLayout>
       <h1 className={styles.pagetitle}>自己紹介</h1>
 
           <h2 className={styles.subtitle}>プロフィール</h2>
@@ -25,6 +26,6 @@ export default function Home() {
 
       <h2 className={styles.subtitle}>趣味</h2>
       <p className={styles.container}>  ゲーム制作・絵</p>
-    </main>
+    </PageLayout>
   );
 }

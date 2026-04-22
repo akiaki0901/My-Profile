@@ -1,16 +1,11 @@
-"use client";
 import styles from "./page.module.css";
-import Header from "@/components/Header";
 import ButtonOpenText from "@/components/ButtonOpenText";
-import Footer from "@/components/Footer"
-import Image from "next/image";
+import Image_Text from "@/components/Image_Text";
+import PageLayout from "@/components/PageLayout";
+
 export default function Home() {
   return (
-    <main>
-      <div className={styles.title_header}>
-         <Header />
-      </div>
-
+    <PageLayout>
        <h1 className={styles.pagetitle}>
         Unityゲーム制作
       </h1>
@@ -22,12 +17,9 @@ export default function Home() {
             規模が大きくなっていくにつれて、コードがぐちゃぐちゃになったりそもそもUnityの座標を完全無視したSpriteRendererを書き換える方式
             がつらくなってきて、詰んだのでこのゲームの製作は一旦断念しました。
           </p>
-          <Image
-            src="/unityShoot.png"
-            alt=""
-            width={500}
-            height={300}
-          />
+          <Image_Text imageName={"/unityShoot.png"}>
+            <p>ピクセル書き換えで動いている</p>
+          </Image_Text>
       </ButtonOpenText>
 
       <ButtonOpenText title = "ハクスラダンジョンゲーム作成" defaultOpen={true}>
@@ -38,20 +30,16 @@ export default function Home() {
             自作のドット絵エディタにpngで出力させる方法にして、1000倍(比喩ではありません。)軽くしたり、
             やっとゲーム作りのスタートラインに立てたと思います。完成が楽しみです。
           </p>
-          <Image
-            src="/dangeonWalk.png"
-            alt=""
-            width={500}
-            height={300}
-          />
-          <Image
-            src="/dangeonBattle.png"
-            alt=""
-            width={500}
-            height={300}
-          />
+          <Image_Text imageName={"/dangeonWalk.png"}>
+            <p>ランダム生成マップ</p>
+          </Image_Text>
+          
+          <Image_Text imageName={"/dangeonBattle.png"}>
+            <p>ターン制バトル</p>
+          </Image_Text>
+
       </ButtonOpenText>
        
-    </main>
+    </PageLayout>
   );
 }
