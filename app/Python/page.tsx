@@ -1,9 +1,12 @@
-"use client";
 import styles from "./page.module.css";
 import ButtonOpenText from "@/components/ButtonOpenText";
 import Image_Text from "@/components/Image_Text";
 import PageLayout from "@/components/PageLayout";
 
+export const metadata ={
+  title:"自己紹介|Python",
+  description:"Pythonでやったことを紹介"
+}
 
 export default function Home() {
 
@@ -14,8 +17,8 @@ export default function Home() {
         Pythonゲーム制作
       </h1>
 
-      <ButtonOpenText title = "初めての自作ゲーム「ランダムドア」" defaultOpen={true}>
-          <p>
+      <ButtonOpenText title = {<h1 className={styles.subtitle}>初めての自作ゲーム「ランダムドア」</h1>} defaultOpen={true}>
+          <p className={styles.container}>
             Pythonで初めて作ったゲームは、ランダムドアというゲームです。pygameを使いました。正解のドアを選んで進み、正解して進むとドアが増えていきます。
             ドアが4つになるとまた2に戻る感じでした。面白いゲームではないです。
           </p>
@@ -25,8 +28,8 @@ export default function Home() {
           </Image_Text>
       </ButtonOpenText>
       
-      <ButtonOpenText title = "お絵描きアプリ零号機作製">
-        <p>
+      <ButtonOpenText title = {<h1 className={styles.subtitle}>お絵描きアプリ零号機作製</h1>}>
+        <p className={styles.container}>
             カーソルが左上から動き黒か白を選ぶと次に行き、端につくと下に改行、そして左からまた描く。
             書き出しは背景がgbなのでスクショで可能(したことはない)。
         </p>
@@ -36,8 +39,8 @@ export default function Home() {
         </Image_Text>
       </ButtonOpenText>
      
-      <ButtonOpenText title = "お絵描きアプリ初号機作成">
-          <p>
+      <ButtonOpenText title = {<h1 className={styles.subtitle}>お絵描きアプリ初号機作製</h1>}>
+          <p className={styles.container}>
             カーソルを矢印キーで自由に動かせて、色も数字キーで指定可能。書き出しは背景がgbなのでスクショで可能(したことはない)。
             一応作品は描ける(もちろん描いたことはない)。
           </p>
@@ -48,8 +51,8 @@ export default function Home() {
 
       </ButtonOpenText>
       
-      <ButtonOpenText title = "お絵描きアプリ弐号機作成">
-          <p>
+      <ButtonOpenText title = {<h1 className={styles.subtitle}>お絵描きアプリ弐号機作製</h1>}>
+          <p  className={styles.container}>
             ついにマウスで描けるようになります。書き出しはコマンドプロンプトにprint関数で座標リストを表示、ゲームで使うことができます。
             色はゲーム側で一色指定してもらう必要あり。次のドットメーカーのプロトタイプ的存在。
           </p>
@@ -60,8 +63,8 @@ export default function Home() {
 
       </ButtonOpenText>
       
-      <ButtonOpenText title = "お絵描きアプリ参号機作成">
-          <p>
+      <ButtonOpenText title = {<h1 className={styles.subtitle}>お絵描きアプリ参号機作製</h1>}>
+          <p  className={styles.container}>
             名前をビッグドットメーカーとして作成しました。立ち上げ時に縦横ピクセル数とピクセルサイズ(見た目だけ)、書き出し形式を指定可能。
             シフトで直線描画も可能。色は初号機の数字キーシステム。書き出し形式は2つ選べて、どちらもテキストファイルに書き込むのですが、
             UnityのVector2Intかただのタプルかを選ぶ形式です。まだUnityでの画像を何個も使ってゲームを作る方法を知らずにUnityに毎フレーム描画させてた頃に使っていました。
@@ -73,8 +76,8 @@ export default function Home() {
 
       </ButtonOpenText>
       
-       <ButtonOpenText title = "お絵描きアプリ四号機作成">
-          <p>
+       <ButtonOpenText title = {<h1 className={styles.subtitle}>お絵描きアプリ四号機作製</h1>}>
+          <p  className={styles.container}> 
             作業の効率化と新たな制作方法への対応をテーマに名前をNewドットメーカーとして作成しました。
             まず色システムが大幅進化。画面下に数字キーに割り振られた色が表示されており、1から5が原色セットで変更を受け付けません。
             6から0がRGBAを調整して色を変えて置いておけるパレットとして使えます。スポイト機能もあり、かなり使いやすいです。

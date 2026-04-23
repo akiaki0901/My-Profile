@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import styles from "./page.module.css"
 export default function Image_Text({imageName,children}) {
   return (
     <>
@@ -10,7 +10,7 @@ export default function Image_Text({imageName,children}) {
       height={200}
     />
 
-      {children}
+      <p className={styles.imagedes}>▲{children}</p>
     </>
   );
 }

@@ -48,7 +48,7 @@
   /*align-items: flex-end;*/
   max-width: 800px;
   margin-left: 20px;
-  padding-bottom: 300px;
+  /*padding-bottom: 30px;*/
 }
 .inner {
   display: flex;
@@ -58,7 +58,7 @@
 
 .header {
     display: flex;
-    align-items: flex-end;  /* ←下揃えがポイント */
+    align-items: center; 
     justify-content: space-between; /* 左右に分ける */
     max-width: 800px;
 }
@@ -88,6 +88,10 @@
   justify-content: center;
 }
 .main{
-  padding-bottom: 1000px;
-  padding-left: 800px;
+  padding-bottom: 600px;
+  padding-left: 30px;
+}
+.imagedes{
+  display: flex;
+  align-items: flex-start;
 }
