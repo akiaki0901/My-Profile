@@ -48,7 +48,7 @@ export default function ToggleBox({ title, children ,defaultOpen=false}) {
           alignItems: "center",
         }}
       >
-        <h2 style={{ margin: 0 }}>{title}</h2>
+        {title}
 
         <button onClick={() => setOpen(!open)}>
           {open ? <p style={{ color:"blue" }}>閉じる ▲</p> : <p style={{ color:"blue" }}>開く ▼</p>}

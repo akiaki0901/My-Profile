@@ -95,3 +95,18 @@
   display: flex;
   align-items: flex-start;
 }
+
+/*内容*/
+.container {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/*内容ごとの見出し*/
+.subtitle{
+    /*max-width: 800px;*/
+    font-size: 24px;
+    font-weight: 500;
+    /*padding: 15px 15px 0px 15px;上右下左*/
+}

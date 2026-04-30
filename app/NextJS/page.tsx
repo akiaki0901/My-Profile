@@ -1,21 +1,23 @@
-"use client";
+{/*"use client";*/}
+import {client} from "@/lib/microcms";
+
 import styles from "./page.module.css";
-import Header from "../../components/Header";
-import ButtonOpenText from "../../components/ButtonOpenText";
-import Footer from "../../components/Footer"
-export default function Home() {
+import PageLayout from "@/components/PageLayout";
+import Articles from "@/components/Articles"
+
+export default async function NextPage() {
+const data = await client.get({
+  endpoint:'diary',
+});
+
   return (
-    <main>
-      <div className={styles.title_header}>
-         <Header />
-      </div>
-      
+    
+    <PageLayout>{/*ナビゲーションバーとフッター*/}     
       <h1 className={styles.pagetitle}>
         Next.jsについて
       </h1>
-
-
-      
-    </main>
+      <Articles type='Next.js'/>
+    </PageLayout>
+    
   );
 }

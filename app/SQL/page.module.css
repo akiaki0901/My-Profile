@@ -1,27 +1,30 @@
+/*内容*/
+.container {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+
 /*内容ごとの見出し*/
 .subtitle{
     /*max-width: 800px;*/
-    margin-top: 10px;
-    margin-left: 60px;
     font-size: 24px;
     font-weight: 500;
     /*padding: 15px 15px 0px 15px;上右下左*/
 }
-/*内容*/
-.container {
-  margin-left: 65px;
-  font-size: 20px;
-  max-width: 800px;
-  padding: 20px;
-  line-height: 1.6;
-}
+
 /*ページのタイトル*/
 .pagetitle{
   margin-left: 10px;
   font-size: 32px;
   padding: 20px;
-  font-weight: 800;
+  text-decoration: none;
+  font-weight:800
 }
+
 .imagediv{
   display: flex;
   align-items: flex-start;
