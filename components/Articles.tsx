@@ -3,6 +3,10 @@ import {client} from "@/lib/microcms";
 
 import styles from "./page.module.css";
 
+type Props = {
+  type: string;
+};
+
 type Article = {
   id: string;
   title: string;
@@ -10,7 +14,7 @@ type Article = {
   type: string;
 };
 
-export default async function Articles({type}:Article) {
+export default async function Articles({type}:Props) {
 const data = await client.get({
   endpoint:'diary',
 });
