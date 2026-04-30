@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import ButtonOpenText from "@/components/ButtonOpenText";
 import Image_Text from "@/components/Image_Text";
 import PageLayout from "@/components/PageLayout";
+import Articles from "@/components/Articles"
 
 export const metadata ={
   title: "学習記録|SQL",

@@ -1,15 +1,14 @@
-{/*"use client";*/}
-import {client} from "@/lib/microcms";
 
 import styles from "./page.module.css";
 import PageLayout from "@/components/PageLayout";
 import Articles from "@/components/Articles"
 
-export default async function NextPage() {
-const data = await client.get({
-  endpoint:'diary',
-});
+export const metadata ={
+  title:"自己紹介|Next.js",
+  description:"Next.jsでやったことを紹介"
+}
 
+export default async function NextPage() {
   return (
     
     <PageLayout>{/*ナビゲーションバーとフッター*/}     

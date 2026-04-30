@@ -1,5 +1,7 @@
 import styles from "./page.module.css";
 import PageLayout from "@/components/PageLayout";
+import Articles from "@/components/Articles"
+
 export default function Home() {
 
   return (
