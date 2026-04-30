@@ -10,7 +10,7 @@ type Article = {
   type: string;
 };
 
-export default async function Articles({type}) {
+export default async function Articles({type}:Article) {
 const data = await client.get({
   endpoint:'diary',
 });
